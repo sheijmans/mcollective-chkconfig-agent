@@ -2,8 +2,8 @@ metadata    :name        => "chkconfig",
             :description => "MCollective Agent to manage/use chkconfig",
             :author      => "S. Heijmans",
             :license     => "ASL2",
-            :version     => "0.0.2",
-            :url         => "https://github.com/sheijmans/mcollective-chkconfig",
+            :version     => "0.0.3",
+            :url         => "https://github.com/sheijmans/mcollective-chkconfig-agent",
             :timeout     => 30
 
 action "list", :description => "chkconfig list a service" do
