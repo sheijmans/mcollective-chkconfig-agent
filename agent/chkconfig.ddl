@@ -2,7 +2,7 @@ metadata    :name        => "chkconfig",
             :description => "MCollective Agent to manage/use chkconfig",
             :author      => "S. Heijmans",
             :license     => "ASL2",
-            :version     => "0.1",
+            :version     => "0.0.2",
             :url         => "https://github.com/sheijmans/mcollective-chkconfig",
             :timeout     => 30
 
@@ -24,4 +24,10 @@ action "list", :description => "chkconfig list a service" do
     output :exitcode,
            :description => "The exitcode from the chkconfig command",
            :display_as => "Exit Code"
+
+    if respond_to?(:summarize)
+        summarize do
+            aggregate summary("output")
+        end
+    end
 end
