@@ -24,3 +24,7 @@ chkconfig list a service wiith the MCollective Agent:
 
     $ mco rpc chkconfig list service=auditd
 
+chkconfig list a service wiith the MCollective Application:
+
+    $ mco chkconfig list auditd
+
